@@ -1,0 +1,22 @@
+{
+  "name": "codigo-limpo-js",
+  "version": "1.0.0",
+  "description": "Repositório original: [ryanmcdermott/clean-code-javascript](https://github.com/ryanmcdermott/clean-code-javascript)",
+  "main": "index.js",
+  "scripts": {
+    "start": "browser-sync start -s -f *.html assets --no-ui --no-notify",
+    "deploy": "surge --domain codigolimpojs.surge.sh .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/gabrielgodoy/codigo-limpo-js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/gabrielgodoy/codigo-limpo-js/issues"
+  },
+  "homepage": "https://gitlab.com/gabrielgodoy/codigo-limpo-js#README"
+}
