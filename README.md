@@ -4,15 +4,15 @@ Repositório original: [ryanmcdermott/clean-code-javascript](https://github.com/
 
 ## Índice
   1. [Introdução](#introducao)
-  2. [Variáveis](#Váriaveis)
-  3. [Funções](#Funções)
+  2. [Variáveis](#váriaveis)
+  3. [Funções](#funções)
   4. [Objetos e estrutura dos dados](#objetos-e-estrutura-dos-dados)
-  5. [Classes](#Classes)
+  5. [Classes](#classes)
   6. [Testes](#testes)
-  7. [Concorrência e assincronia](#Concorrência-e-assincronia)
-  8. [Tratamento de erros](#Tratamento-de-erros)
-  9. [Formatação](#Formatação)
-  10. [Comentários](#Comentários)
+  7. [Concorrência e assincronia](#concorrência-e-assincronia)
+  8. [Tratamento de erros](#tratamento-de-erros)
+  9. [Formatação](#formatação)
+  10. [Comentários](#comentários)
 
 ## Introdução
 ![Imagem humorística sobre a estimativa de qualidade do código sendo o número de vezes que você xinga lendo um código](http://www.osnews.com/images/comics/wtfm.jpg)
