@@ -39,7 +39,7 @@ const yyyymmdstr = moment().format('YYYY/MM/DD');
 ```javascript
 const currentDate = moment().format('YYYY/MM/DD');
 ```
-**[⬆ voltar para o topo](#índice)**
+**[⬆ voltar para o topo](#Índice)**
 
 ### Utilize o mesmo vocabulário quando variáveis tiverem relação, forem do mesmo tipo
 
@@ -54,7 +54,7 @@ getCustomerRecord();
 ```javascript
 getUser();
 ```
-**[⬆ voltar para o topo](#índice)**
+**[⬆ voltar para o topo](#Índice)**
 
 ### Utilize nomes fáceis de se buscar
 Nós desenvolvedores iremos ler mais código do que escrever. É importante que o código que escrevemos seja legível e de fácil localização. Usando nomes difíceis para variáveis estaremos prejudicando a leitura de outros desenvolvedores. Ferramentas que podem ajudar nesse processo:
@@ -77,7 +77,7 @@ const MILLISECONDS_IN_A_DAY = 86400000;
 setTimeout(blastOff, MILLISECONDS_IN_A_DAY);
 
 ```
-**[⬆ voltar para o topo](#índice)**
+**[⬆ voltar para o topo](#Índice)**
 
 ### Utilize variáveis auto-explicativas
 **Ruim:**
@@ -94,7 +94,7 @@ const cityZipCodeRegex = /^[^,\\]+[,\\\s]+(.+?)\s*(\d{5})?$/;
 const [, city, zipCode] = address.match(cityZipCodeRegex) || [];
 saveCityZipCode(city, zipCode);
 ```
-**[⬆ voltar para o topo](#índice)**
+**[⬆ voltar para o topo](#Índice)**
 
 ### Escreva códigos descritivos
 Código explícito e mais fácil de ler que código implícito
@@ -125,7 +125,7 @@ locations.forEach((location) => {
   dispatch(location);
 });
 ```
-**[⬆ voltar para o topo](#índice)**
+**[⬆ voltar para o topo](#Índice)**
 
 ### Não crie contextos redundantes
 Se sua classe ou objeto pai já descreve seu assunto, não repita no nome das variáveis internas
@@ -155,7 +155,7 @@ function paintCar(car) {
   car.color = 'Red';
 }
 ```
-**[⬆ voltar para o topo](#índice)**
+**[⬆ voltar para o topo](#Índice)**
 
 ### Utilize parâmetros predefinidos nas funções ao invés de condicionais de checagem
 Parâmetros predefinidos são mais limpos do que a criaçao de condicionais para checar se um argumento foi passado ou não por exemplo. Saiba que utilizando parâmetros predefinidos, sua função somente vai oferecer argumentos predefinidos para argumentos `undefined`. Outros valores falsos como `''`, `""`, `false`, `null`, `0`, e `NaN`, não serão substituídos por um valor predefinido.
@@ -176,7 +176,7 @@ function createMicrobrewery(breweryName = 'Hipster Brew Co.') {
 }
 
 ```
-**[⬆ voltar para o topo](#índice)**
+**[⬆ voltar para o topo](#Índice)**
 
 ## **Funções**
 ### Parâmetros em uma função (2 ou menos é o ideal)
@@ -214,7 +214,7 @@ createMenu({
   cancellable: true
 });
 ```
-**[⬆ voltar para o topo](#índice)**
+**[⬆ voltar para o topo](#Índice)**
 
 
 ### Funções devem fazer somente uma coisa
@@ -246,7 +246,7 @@ function isClientActive(client) {
   return clientRecord.isActive();
 }
 ```
-**[⬆ voltar para o topo](#índice)**
+**[⬆ voltar para o topo](#Índice)**
 
 
 ### Os nomes das funções devem dizer o que elas fazem
@@ -272,7 +272,7 @@ function addMonthToDate(month, date) {
 const date = new Date();
 addMonthToDate(1, date);
 ```
-**[⬆ voltar para o topo](#índice)**
+**[⬆ voltar para o topo](#Índice)**
 
 ### Funções devem ter somente um nível de abstração
 
@@ -339,7 +339,7 @@ function parseBetterJSAlternative(code) {
   });
 }
 ```
-**[⬆ voltar para o topo](#índice)**
+**[⬆ voltar para o topo](#Índice)**
 
 ### Remove código duplicado
 
@@ -413,7 +413,7 @@ function showEmployeeList(employees) {
   });
 }
 ```
-**[⬆ voltar para o topo](#índice)**
+**[⬆ voltar para o topo](#Índice)**
 
 ### Crie objetos default com Object.assign()
 
@@ -459,7 +459,7 @@ function createMenu(config) {
 
 createMenu(menuConfig);
 ```
-**[⬆ voltar para o topo](#índice)**
+**[⬆ voltar para o topo](#Índice)**
 
 
 ### Não utilize flags como parâmetros de funções para sinalizar alguma condicional
@@ -488,7 +488,7 @@ function createTempFile(name) {
   createFile(`./temp/${name}`);
 }
 ```
-**[⬆ voltar para o topo](#índice)**
+**[⬆ voltar para o topo](#Índice)**
 
 ### Evite efeitos colaterais (parte 1)
 
@@ -530,7 +530,7 @@ const newName = splitIntoFirstAndLastName(name);
 console.log(name); // 'Ryan McDermott';
 console.log(newName); // ['Ryan', 'McDermott'];
 ```
-**[⬆ voltar para o topo](#índice)**
+**[⬆ voltar para o topo](#Índice)**
 
 ### Evite efeitos colaterais (parte 2)
 
@@ -573,7 +573,7 @@ const adicionarAoCarrinho = (cart, item) => {
 };
 ```
 
-**[⬆ voltar para o topo](#índice)**
+**[⬆ voltar para o topo](#Índice)**
 
 ### Não escreva funções globais
 
@@ -603,7 +603,7 @@ class SuperArray extends Array {
   }
 }
 ```
-**[⬆ voltar para o topo](#índice)**
+**[⬆ voltar para o topo](#Índice)**
 
 ### Dê preferência para a programação funcional ao invés da imperativa
 Javascript não é uma linguagem funcional do jeito que o Haskell é, mas ainda assim tem seu toque funcional.
@@ -658,7 +658,7 @@ const totalOutput = programmerOutput
   .map((programmer) => programmer.linesOfCode)
   .reduce((acc, linesOfCode) => acc + linesOfCode, INITIAL_VALUE);
 ```
-**[⬆ voltar para o topo](#índice)**
+**[⬆ voltar para o topo](#Índice)**
 
 
 ### Encapsule suas condicionais
@@ -680,7 +680,7 @@ if (shouldShowSpinner(fsmInstance, listNodeInstance)) {
   // ...
 }
 ```
-**[⬆ voltar para o topo](#índice)**
+**[⬆ voltar para o topo](#Índice)**
 
 ### Evite condicionais negativas
 
@@ -705,7 +705,7 @@ if (isDOMNodePresent(node)) {
   // ...
 }
 ```
-**[⬆ voltar para o topo](#índice)**
+**[⬆ voltar para o topo](#Índice)**
 
 
 ### Evite condicionais
@@ -759,7 +759,7 @@ class Cessna extends Airplane {
   }
 }
 ```
-**[⬆ voltar para o topo](#índice)**
+**[⬆ voltar para o topo](#Índice)**
 
 
 ### Evite checagem de tipo (parte 1)
@@ -785,7 +785,7 @@ function travelToTexas(vehicle) {
   vehicle.move(this.currentLocation, new Location('texas'));
 }
 ```
-**[⬆ voltar para o topo](#índice)**
+**[⬆ voltar para o topo](#Índice)**
 
 
 ### Evite checagem de tipo (parte 2)
@@ -814,7 +814,7 @@ function combine(val1, val2) {
   return val1 + val2;
 }
 ```
-**[⬆ voltar para o topo](#índice)**
+**[⬆ voltar para o topo](#Índice)**
 
 ### Não otimize demais
 Browsers modernos fazem várias otimizações por debaixo dos panos em tempo de execução. 
@@ -837,7 +837,7 @@ for (let i = 0; i < list.length; i++) {
   // ...
 }
 ```
-**[⬆ voltar para o topo](#índice)**
+**[⬆ voltar para o topo](#Índice)**
 
 ### Remova código morto
 Código morto é tão ruim quanto código duplicado. Não existe razão para tê-lo em sua base de código. 
@@ -867,7 +867,7 @@ function newRequestModule(url) {
 const req = newRequestModule;
 inventoryTracker('apples', req, 'www.inventory-awesome.io');
 ```
-**[⬆ voltar para o topo](#índice)**
+**[⬆ voltar para o topo](#Índice)**
 
 ## **Objetos e estrutura dos dados**
 ### Utilize getters e setters
@@ -924,7 +924,7 @@ function makeBankAccount() {
 const account = makeBankAccount();
 account.setBalance(100);
 ```
-**[⬆ voltar para o topo](#índice)**
+**[⬆ voltar para o topo](#Índice)**
 
 ### Faça seus objetos terem membros privados
 Isso pode ser feito através de closures (para ES5 e abaixo).
@@ -961,7 +961,7 @@ console.log(`Employee name: ${employee.getName()}`); // Employee name: John Doe
 delete employee.name;
 console.log(`Employee name: ${employee.getName()}`); // Employee name: John Doe
 ```
-**[⬆ voltar para o topo](#índice)**
+**[⬆ voltar para o topo](#Índice)**
 
 
 ## **Classes**
@@ -1020,7 +1020,7 @@ class UserSettings {
   }
 }
 ```
-**[⬆ voltar para o topo](#índice)**
+**[⬆ voltar para o topo](#Índice)**
 
 ### Princípio Aberto/Fechado
 
@@ -1106,7 +1106,7 @@ class HttpRequester {
   }
 }
 ```
-**[⬆ voltar para o topo](#índice)**
+**[⬆ voltar para o topo](#Índice)**
 
 
 Princípio da substituição de Liskov
@@ -1220,7 +1220,7 @@ function renderLargeShapes(shapes) {
 const shapes = [new Rectangle(4, 5), new Rectangle(4, 5), new Square(5)];
 renderLargeShapes(shapes);
 ```
-**[⬆ voltar para o topo](#índice)**
+**[⬆ voltar para o topo](#Índice)**
 
 ### Princípio de segregação de interface
 Javascript não tem interfaces, então esse princípio não se aplica tão estritamente quanto outras linguagens que tem interface implementada.
@@ -1292,7 +1292,7 @@ const $ = new DOMTraverser({
   }
 });
 ```
-**[⬆ voltar para o topo](#índice)**
+**[⬆ voltar para o topo](#Índice)**
 
 
 ### Princípio da inversão de dependências
@@ -1385,7 +1385,7 @@ class InventoryRequesterV2 {
 const inventoryTracker = new InventoryTracker(['apples', 'bananas'], new InventoryRequesterV2());
 inventoryTracker.requestItems();
 ```
-**[⬆ voltar para o topo](#índice)**
+**[⬆ voltar para o topo](#Índice)**
 
 
 ### Prefira classes ES2015/ES6 ao invés de simples funções ES5 
@@ -1460,7 +1460,7 @@ class Human extends Mammal {
   speak() { /* ... */ }
 }
 ```
-**[⬆ voltar para o topo](#índice)**
+**[⬆ voltar para o topo](#Índice)**
 
 
 ### Utilize métodos em cadeia, em sequência
@@ -1542,7 +1542,7 @@ const car = new Car()
   .setModel('F-150')
   .save();
 ```
-**[⬆ voltar para o topo](#índice)**
+**[⬆ voltar para o topo](#Índice)**
 
 ### Prefira composição ao invés de herança
 
@@ -1604,7 +1604,7 @@ class Employee {
   // ...
 }
 ```
-**[⬆ voltar para o topo](#índice)**
+**[⬆ voltar para o topo](#Índice)**
 
 ## **Testes**
 Testar é mais importante que entregar. Se você não tem testes ou uma quantidade inadequada, então toda vez que você faz uma entrega de código você não vai ter certeza se quebrou algo.
@@ -1664,7 +1664,7 @@ describe('MakeMomentJSGreatAgain', () => {
   });
 });
 ```
-**[⬆ voltar para o topo](#índice)**
+**[⬆ voltar para o topo](#Índice)**
 
 ## **Concorrência e assincronia**
 ### Utilize Promises, evite callbacks
@@ -1704,7 +1704,7 @@ require('request-promise').get('https://en.wikipedia.org/wiki/Robert_Cecil_Marti
   });
 
 ```
-**[⬆ voltar para o topo](#índice)**
+**[⬆ voltar para o topo](#Índice)**
 
 ### Async/Await são ainda mais limpos que Promises
 Promises são uma alternativa bem limpa se comparadas a callbacks, mas ES2017/ES8 traz async e await
@@ -1739,7 +1739,7 @@ async function getCleanCodeArticle() {
   }
 }
 ```
-**[⬆ voltar para o topo](#índice)**
+**[⬆ voltar para o topo](#Índice)**
 
 ## **Tratamento de erros**
 
@@ -1807,7 +1807,7 @@ getdata()
 });
 ```
 
-**[⬆ voltar para o topo](#índice)**
+**[⬆ voltar para o topo](#Índice)**
 
 ## **Formatação**
 
@@ -1854,7 +1854,7 @@ function restoreDatabase() {}
 class Animal {}
 class Alpaca {}
 ```
-**[⬆ voltar para o topo](#índice)**
+**[⬆ voltar para o topo](#Índice)**
 
 ### Funções que chamam ou que são chamadas estar próximas
 
@@ -1940,7 +1940,7 @@ const review = new PerformanceReview(employee);
 review.perfReview();
 ```
 
-**[⬆ voltar para o topo](#índice)**
+**[⬆ voltar para o topo](#Índice)**
 
 
 ## **Comentários**
@@ -1986,7 +1986,7 @@ function hashIt(data) {
 }
 
 ```
-**[⬆ voltar para o topo](#índice)**
+**[⬆ voltar para o topo](#Índice)**
 
 ### Não deixe código comentado na sua base de código
 Controle de versão existe para uma razão. Deixe código antigo na história do controle de versão.
@@ -2003,7 +2003,7 @@ doStuff();
 ```javascript
 doStuff();
 ```
-**[⬆ voltar para o topo](#índice)**
+**[⬆ voltar para o topo](#Índice)**
 
 ### Não utilize comentários que parecem changelogs
 Lembre-se, use controle de versão! Não existe a necessidade de código morto, código comentado, ou comentários do que foi mudado. 
@@ -2028,7 +2028,7 @@ function combine(a, b) {
   return a + b;
 }
 ```
-**[⬆ voltar para o topo](#índice)**
+**[⬆ voltar para o topo](#Índice)**
 
 ### Evite blocos de comentários que indicam seções no seu código
 
@@ -2065,4 +2065,4 @@ const actions = function() {
 };
 ```
 
-**[⬆ voltar para o topo](#índice)**
+**[⬆ voltar para o topo](#Índice)**
