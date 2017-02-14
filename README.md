@@ -21,7 +21,7 @@ Princípios de Engenharia de Software, do livro de Robert C. Martin [*Código Li
 
 Nem todo princípio aqui precisa ser seguido ao pé da letra, e alguns listados aqui não são universalmente aceitos. São somente guias e nada mais. Mas essas ideias se desenvolveram ao longo de anos de experiência em desenvolvimento pelos autores do livro *Código Limpo*. 
 
-Nossa profissão de engenheiro de software tem pouco mais de 50 anos, e ainda estamos aprendendo muito. Quando arquitetura de software for tão velho quanto arquitetura em si é hoje, talvez teremos mais regras sólidas para seguir. Por agora, deixe essas diretrizes servirem como ponto de apoio para avaliar a qualidade do código que você e a sua equipe produz.
+Nossa profissão de engenheiro de software tem pouco mais de 50 anos, e ainda estamos aprendendo muito. Quando arquitetura de software for tão velha quanto arquitetura em si é hoje, talvez teremos regras mais sólidas para seguir. Por agora, deixe essas diretrizes servirem como ponto de apoio para avaliar a qualidade do código que você e a sua equipe produz.
 
 Mais uma coisa: Entendendo essas regras não vai fazer de você um desenvolvedor melhor do dia pra noite, e aplicar essas regras por anos a fio não vai impedir que você cometa erros. Cada pedaço de código começa como um rascunho inicial, como argila fresca que vai ser moldada no seu formato final. Por último nós lapidamos as imperfeições quando revisamos o código com nosso time. Não se culpe por criar códigos iniciais que precisam de melhoria.   
 
