@@ -17,9 +17,7 @@ Repositório original: [ryanmcdermott/clean-code-javascript](https://github.com/
 ## Introdução
 ![Imagem humorística sobre a estimativa de qualidade do código sendo o número de vezes que você xinga lendo um código](http://www.osnews.com/images/comics/wtfm.jpg)
 
-Princípios de Engenharia de Software, do livro de Robert C. Martin
-
-[*Código Limpo*](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882), adaptado para o Javascript. Isso não é um guia de estilo. É um guia para produzir código legível, reutilizável e software Javascript refatorável.
+Princípios de Engenharia de Software, do livro de Robert C. Martin [*Código Limpo*](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882), adaptado para o Javascript. Isso não é um guia de estilo. É um guia para produzir código legível, reutilizável e software Javascript refatorável.
 
 Nem todo princípio aqui precisa ser seguido ao pé da letra, e alguns listados aqui não são universalmente aceitos. São somente guias e nada mais. Mas essas ideias se desenvolveram ao longo de anos de experiência em desenvolvimento pelos autores do livro *Código Limpo*. 
 
