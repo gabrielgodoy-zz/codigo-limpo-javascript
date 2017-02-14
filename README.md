@@ -3,7 +3,7 @@ Repositório original: [ryanmcdermott/clean-code-javascript](https://github.com/
 # codigo-limpo-javascript
 
 ## Índice
-  1. [Introdução](#introducao)
+  1. [Introdução](#introdução)
   2. [Variáveis](#váriaveis)
   3. [Funções](#funções)
   4. [Objetos e estrutura dos dados](#objetos-e-estrutura-dos-dados)
