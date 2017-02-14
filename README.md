@@ -4,15 +4,15 @@ Repositório original: [ryanmcdermott/clean-code-javascript](https://github.com/
 
 ## Índice
   1. [Introdução](#introducao)
-  2. [Variáveis](#variaveis)
-  3. [Funções](#funcoes)
+  2. [Variáveis](#Váriaveis)
+  3. [Funções](#Funções)
   4. [Objetos e estrutura dos dados](#objetos-e-estrutura-dos-dados)
-  5. [Classes](#classes)
+  5. [Classes](#Classes)
   6. [Testes](#testes)
-  7. [Concorrência e assincronia](#concorrencia-e-assincronia)
-  8. [Tratamento de erros](#tratamento-de-erros)
-  9. [Formatação](#formatacao)
-  10. [Comentários](#comentarios)
+  7. [Concorrência e assincronia](#Concorrência-e-assincronia)
+  8. [Tratamento de erros](#Tratamento-de-erros)
+  9. [Formatação](#Formatação)
+  10. [Comentários](#Comentários)
 
 ## Introdução
 ![Imagem humorística sobre a estimativa de qualidade do código sendo o número de vezes que você xinga lendo um código](http://www.osnews.com/images/comics/wtfm.jpg)
@@ -27,7 +27,7 @@ Nossa profissão de engenheiro de software tem pouco mais de 50 anos, e ainda es
 
 Mais uma coisa: Entendendo essas regras não vai fazer de você um desenvolvedor melhor do dia pra noite, e aplicar essas regras por anos a fio não vai impedir que você cometa erros. Cada pedaço de código começa como um rascunho inicial, como argila fresca que vai ser moldada no seu formato final. Por último nós lapidamos as imperfeições quando revisamos o código com nosso time. Não se culpe por criar códigos iniciais que precisam de melhoria.   
 
-## **Váriaveis**
+##**Váriaveis**
 ### Utilize nomes fáceis e com significado
 
 **Ruim:**
@@ -178,7 +178,7 @@ function createMicrobrewery(breweryName = 'Hipster Brew Co.') {
 ```
 **[⬆ voltar para o topo](#Índice)**
 
-## **Funções**
+##**Funções**
 ### Parâmetros em uma função (2 ou menos é o ideal)
 Limitando a quantidade de parâmetros numa função é muito importante porque isso torna seu código mais fácil de ser testado. Geralmente quanto mais parâmetros existirem mais serão os casos de testes que terão que ser feitos com todas suas possíveis combinações.
 
@@ -869,7 +869,7 @@ inventoryTracker('apples', req, 'www.inventory-awesome.io');
 ```
 **[⬆ voltar para o topo](#Índice)**
 
-## **Objetos e estrutura dos dados**
+##**Objetos e estrutura dos dados**
 ### Utilize getters e setters
 
 Utilizando getters e setters para acessar dados em objetos pode ser melhor do que simplesmente olhar pela propriedade em um objeto.
@@ -964,7 +964,7 @@ console.log(`Employee name: ${employee.getName()}`); // Employee name: John Doe
 **[⬆ voltar para o topo](#Índice)**
 
 
-## **Classes**
+##**Classes**
 
 ### Princípio de uma só responsabilidade 
 
@@ -1606,7 +1606,7 @@ class Employee {
 ```
 **[⬆ voltar para o topo](#Índice)**
 
-## **Testes**
+##**Testes**
 Testar é mais importante que entregar. Se você não tem testes ou uma quantidade inadequada, então toda vez que você faz uma entrega de código você não vai ter certeza se quebrou algo.
 Decidir o quanto se deve testar é medido pelo time, mas ter 100% de cobertura (todas funções e todos os caminhos das condicionais) é como você e seu time irão atingir confiança e paz de espírito.
 Isso significa que além de ter um bom framework de testes, você também precisa usar uma [boa ferramenta de cobertura](http://gotwarlost.github.io/istanbul/)
@@ -1666,7 +1666,7 @@ describe('MakeMomentJSGreatAgain', () => {
 ```
 **[⬆ voltar para o topo](#Índice)**
 
-## **Concorrência e assincronia**
+##**Concorrência e assincronia**
 ### Utilize Promises, evite callbacks
 
 Callbacks não são limpos, e eles causam um aninhamento excessivo. 
@@ -1741,7 +1741,7 @@ async function getCleanCodeArticle() {
 ```
 **[⬆ voltar para o topo](#Índice)**
 
-## **Tratamento de erros**
+##**Tratamento de erros**
 
 Exibir erros com throw é uma coisa boa! Isso sinaliza que sua aplicação tem um erro e faz você saber disso parando a execução do script, matando o processo (em Node),
 e notificando no seu console.
@@ -1809,7 +1809,7 @@ getdata()
 
 **[⬆ voltar para o topo](#Índice)**
 
-## **Formatação**
+##**Formatação**
 
 Formatação é subjetivo. Assim como muitas regras expostas aqui, não existe uma regra rápida e sólida para ser seguida.
 O ponto principal é NÃO ARGUMENTE em cima de regras de formatação.
@@ -1943,7 +1943,7 @@ review.perfReview();
 **[⬆ voltar para o topo](#Índice)**
 
 
-## **Comentários**
+##**Comentários**
 
 Somente comente coisas que necessitam explicação de regras de negócio complexas.
 Comentários são desculpas, não algo obrigatório. Bom código na maioria das vezes se auto-documenta.
