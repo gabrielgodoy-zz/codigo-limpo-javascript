@@ -39,7 +39,7 @@ const currentDate = moment().format('YYYY/MM/DD');
 ```
 **[⬆ voltar para o topo](#Índice)**
 
-### Utilize o mesmo vocabulário quando variáveis tiverem relação, forem do mesmo tipo
+### Utilize o mesmo vocabulário quando variáveis tiverem relação (forem do mesmo tipo)
 
 **Ruim:**
 ```javascript
@@ -95,7 +95,7 @@ saveCityZipCode(city, zipCode);
 **[⬆ voltar para o topo](#Índice)**
 
 ### Escreva códigos descritivos
-Código explícito e mais fácil de ler que código implícito
+Código explícito é mais fácil de ler que código implícito
 
 **Ruim:**
 ```javascript
@@ -126,7 +126,7 @@ locations.forEach((location) => {
 **[⬆ voltar para o topo](#Índice)**
 
 ### Não crie contextos redundantes
-Se sua classe ou objeto pai já descreve seu assunto, não repita no nome das variáveis internas
+Se sua classe ou objeto pai já descreve seu assunto, não repita no nome nas variáveis internas
 
 **Ruim:**
 ```javascript
@@ -155,7 +155,7 @@ function paintCar(car) {
 ```
 **[⬆ voltar para o topo](#Índice)**
 
-### Utilize parâmetros predefinidos nas funções ao invés de condicionais de checagem
+### Utilize parâmetros default nas funções, ao invés de condicionais de checagem
 Parâmetros predefinidos são mais limpos do que a criaçao de condicionais para checar se um argumento foi passado ou não por exemplo. Saiba que utilizando parâmetros predefinidos, sua função somente vai oferecer argumentos predefinidos para argumentos `undefined`. Outros valores falsos como `''`, `""`, `false`, `null`, `0`, e `NaN`, não serão substituídos por um valor predefinido.
 
 **Ruim:**
@@ -180,7 +180,7 @@ function createMicrobrewery(breweryName = 'Hipster Brew Co.') {
 ### Parâmetros em uma função (2 ou menos é o ideal)
 Limitando a quantidade de parâmetros numa função é muito importante porque isso torna seu código mais fácil de ser testado. Geralmente quanto mais parâmetros existirem mais serão os casos de testes que terão que ser feitos com todas suas possíveis combinações.
 
-Um ou dois parâmetros é o cenário ideal, e três parâmetros devem ser evitados se possível. Qualquer função com mais de três argumentos deve ser repensada. Geralmente, se você tem mais de dois argumentos sua função está fazendo coisa demais. Caso não esteja, é sempre possível inserir um objeto como parâmetro da função que dentro dele terão outras variáveis.  
+Um ou dois parâmetros é o cenário ideal, e três parâmetros devem ser evitados se possível. Qualquer função com mais de três argumentos deve ser repensada. Geralmente, se você tem mais de dois argumentos sua função está fazendo coisa demais. Caso não seja esse o case, é sempre possível inserir um objeto como parâmetro da função que dentro dele terão outras variáveis.  
 
 Já que o Javascript permite a criação de objetos dinamicamente, você pode usar uma objeto em caso de precisar de muitos argumentos.
 
@@ -339,7 +339,7 @@ function parseBetterJSAlternative(code) {
 ```
 **[⬆ voltar para o topo](#Índice)**
 
-### Remove código duplicado
+### Remova código duplicado
 
 Faça o seu melhor para evitar código duplicado. Código duplicado é ruim porque significa que existe mais de um lugar onde você precisará atualizar alguma coisa caso alguma lógica mude.
 
@@ -1107,7 +1107,7 @@ class HttpRequester {
 **[⬆ voltar para o topo](#Índice)**
 
 
-Princípio da substituição de Liskov
+### Princípio da substituição de Liskov
 
 Este é um termo que assusta mas o conceito é bem simples. 
 É formalmente definido como "Se S é um subtipo de T, então objetos do tipo T podem ser substituídos com objetos do tipo S
